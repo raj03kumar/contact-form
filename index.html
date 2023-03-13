@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-me</title>
+    <!-- Google Fonts (poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="contact">
+        <div>
+            <h1>Contact Me</h1>
+            <p>
+                Feel free to send a message about anything you might need help with. I would love to hear from you!
+            </p>
+            <form action="" id="contact-form">
+                <!-- Name -->
+                <label for="user_name">Your Name</label>
+                <input  type="text"
+                        id="user_name"
+                        name="user_name"
+                        placeholder="Your name..."
+                        required
+                        >
+                <!-- Email -->
+                <label for="user_email">Your Email</label>
+                <input  type="text"
+                        id="user_email"
+                        name="user_email"
+                        placeholder="johndoe@gmail.com"
+                        required
+                        >
+                <!-- Message -->
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" placeholder="Your message..." required></textarea>
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Send</button>
+            </form>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
