@@ -43,7 +43,8 @@ contactForm.addEventListener("submit", e=>{
         });
 
     setTimeout(() => {
-        submitBtn.innerText = "Send";
+        if(submitBtn.innerText != "Send")
+            submitBtn.innerText = "Send";
     }, 3500);
 });
 
