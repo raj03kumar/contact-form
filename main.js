@@ -41,11 +41,13 @@ contactForm.addEventListener("submit", e=>{
             //Change button text
             submitBtn.innerText = "Something went wrong";
         });
+});
 
+if(submitBtn.innerText!= "Send"){
     setTimeout(() => {
         submitBtn.innerText = "Send";
-    }, 5500);
-});
+    }, 3000);
+}
 
 // disabling inspect element
 document.addEventListener("contextmenu", function(e){
